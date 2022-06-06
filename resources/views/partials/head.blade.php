@@ -10,6 +10,7 @@
     <meta name="description" content="ATAMOTS adalah website monitoring kapasitas tempat sampah anda">
     <meta name="author" content="Rochmad Nurul Fahmi">
     <meta name="keyword" content="atamots, ATAMOTS, IoT, tempat sampah berbasis IoT">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     {{-- visual element on head tag --}}
     <title>{{ config('app.name') }}</title>

@@ -6,7 +6,10 @@
 <script src="{{ asset('assets/js/plugins/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js') }}"></script>
 <script src="{{ asset('assets/js/plugins/bootstrap-toggle/bootstrap-toggle.min.js') }}"></script>
 <script src="{{ asset('assets/js/plugins/jquery-scrollbar/jquery.scrollbar.min.js') }}"></script>
+<script src="{{ asset('assets/js/core/atlantis.min.js') }}"></script>
 
 {{-- JS Plugins --}}
+@yield('js_plugins')
 
-{{-- JS Custom --}}
+{{-- JS Customs --}}
+@yield('js_customs')
