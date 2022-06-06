@@ -20,6 +20,90 @@ var LeftElement = function LeftElement() {
 
 /***/ }),
 
+/***/ "./resources/js/auth/components/LoginForm.js":
+/*!***************************************************!*\
+  !*** ./resources/js/auth/components/LoginForm.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _components_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/index */ "./resources/js/components/index.js");
+
+
+var LoginForm = function LoginForm() {
+  return "\n  <div class=\"login-form animated fadeIn\">\n    ".concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.InputForm)({
+    name: 'username',
+    label: 'Nama Pengguna',
+    required: true,
+    tabIndex: 1
+  }), "\n    ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.InputForm)({
+    name: 'password',
+    label: 'Katasandi',
+    type: 'password',
+    required: true,
+    tabIndex: 2
+  }), "\n    ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.ButtonForm)({
+    label: 'Masuk',
+    tabIndex: 3
+  }), "\n  </div>\n  ");
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LoginForm);
+
+/***/ }),
+
+/***/ "./resources/js/auth/components/RegisterForm.js":
+/*!******************************************************!*\
+  !*** ./resources/js/auth/components/RegisterForm.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _components_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/index */ "./resources/js/components/index.js");
+
+
+var RegisterForm = function RegisterForm() {
+  return "\n  <div class=\"login-form animated fadeIn\">\n    ".concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.InputForm)({
+    name: 'username',
+    label: 'Nama Pengguna',
+    required: true,
+    tabIndex: 1
+  }), "\n    ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.InputForm)({
+    name: 'email',
+    label: 'Surel',
+    type: 'email',
+    required: true,
+    tabIndex: 2
+  }), "\n    ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.InputForm)({
+    name: 'password',
+    label: 'Katasandi',
+    type: 'password',
+    required: true,
+    tabIndex: 3
+  }), "\n    ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.InputForm)({
+    name: 'confirm_password',
+    label: 'Konfirmasi Katasandi',
+    type: 'password',
+    required: true,
+    tabIndex: 4
+  }), "\n    ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.ButtonForm)({
+    label: 'Daftar',
+    tabIndex: 4
+  }), "\n  </div>\n  ");
+};
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RegisterForm);
+
+/***/ }),
+
 /***/ "./resources/js/auth/components/RightElement.js":
 /*!******************************************************!*\
   !*** ./resources/js/auth/components/RightElement.js ***!
@@ -32,56 +116,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _components_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../components/index */ "./resources/js/components/index.js");
+/* harmony import */ var _LoginForm__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./LoginForm */ "./resources/js/auth/components/LoginForm.js");
+/* harmony import */ var _RegisterForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./RegisterForm */ "./resources/js/auth/components/RegisterForm.js");
+
+
 
 
 var RightElement = function RightElement(page) {
-  function loginForm() {
-    return " \n      <div class=\"container container-signup container-transparent animated fadeIn\">\n        <h3 class=\"text-center\">".concat("ATAMOTS", "</h3>\n        <form id=\"auth-form\" data-action=\"signin\">\n          <div class=\"login-form\">\n            ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.InputForm)({
-      name: 'username',
-      label: 'Nama Pengguna',
-      required: true,
-      autofocus: true,
-      tabIndex: 1
-    }), "\n            ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.InputForm)({
-      name: 'password',
-      label: 'Katasandi',
-      type: 'password',
-      required: true,
-      tabIndex: 2
-    }), "\n            ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.ButtonForm)({
-      label: 'Masuk',
-      tabIndex: 3
-    }), "\n          </div>\n        </form>\n        ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.ButtonAuthAction)({
-      messages: 'Belum memiliki akun?',
-      auth: 'signup',
-      label: 'Daftar'
-    }), "\n        </div>\n    ");
-  }
-
-  function registerForm() {
-    return "\n      <div class=\"container container-signup container-transparent animated fadeIn\">\n        <h3 class=\"text-center\">".concat("ATAMOTS", "</h3>\n        <form id=\"auth-form\" data-action=\"signup\">\n          <div class=\"login-form\">\n            ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.InputForm)({
-      name: 'username',
-      label: 'Nama Pengguna',
-      required: true,
-      autofocus: true,
-      tabIndex: 1
-    }), "\n            ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.InputForm)({
-      name: 'password',
-      label: 'Katasandi',
-      type: 'password',
-      required: true,
-      tabIndex: 2
-    }), "\n            ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.ButtonForm)({
-      label: 'Daftar',
-      tabIndex: 3
-    }), "\n          </div>\n        </form>\n        ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.ButtonAuthAction)({
-      messages: 'Sudah memiliki akun?',
-      auth: 'signin',
-      label: 'Masuk'
-    }), "\n      </div>\n    ");
-  }
-
-  return "\n  <div class=\"login-aside w-50 d-flex align-items-center justify-content-center bg-white right-element-auth\">\n    ".concat(page === 'signin' ? loginForm() : registerForm(), "\n  </div>\n  ");
+  return "\n  <div class=\"login-aside w-50 d-flex align-items-center justify-content-center bg-white right-element-auth\">\n    <div class=\"container container-login container-transparent animated fadeIn\">\n      <h3 class=\"text-center\">".concat("ATAMOTS", "</h3>\n      <form id=\"auth-form\" data-action=\"signin\">\n        ").concat(page === 'signin' ? (0,_LoginForm__WEBPACK_IMPORTED_MODULE_1__["default"])() : (0,_RegisterForm__WEBPACK_IMPORTED_MODULE_2__["default"])(), "\n      </form>\n      ").concat((0,_components_index__WEBPACK_IMPORTED_MODULE_0__.ButtonAuthAction)({
+    messages: 'Belum memiliki akun?',
+    auth: 'signup',
+    label: 'Daftar'
+  }), "\n    </div>\n  </div>\n  ");
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RightElement);
@@ -17471,27 +17517,52 @@ var __webpack_exports__ = {};
   !*** ./resources/js/auth/main.js ***!
   \***********************************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components */ "./resources/js/components/index.js");
-/* harmony import */ var _components_LeftElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/LeftElement */ "./resources/js/auth/components/LeftElement.js");
-/* harmony import */ var _components_RightElement__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/RightElement */ "./resources/js/auth/components/RightElement.js");
+/* harmony import */ var _components_LeftElement__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/LeftElement */ "./resources/js/auth/components/LeftElement.js");
+/* harmony import */ var _components_RightElement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/RightElement */ "./resources/js/auth/components/RightElement.js");
+/* harmony import */ var _components_LoginForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/LoginForm */ "./resources/js/auth/components/LoginForm.js");
+/* harmony import */ var _components_RegisterForm__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/RegisterForm */ "./resources/js/auth/components/RegisterForm.js");
 window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+
 
 
 
 var app = document.getElementById('app');
 window.addEventListener('load', function (e) {
-  app.insertAdjacentHTML('beforeend', (0,_components_LeftElement__WEBPACK_IMPORTED_MODULE_1__["default"])());
-  app.insertAdjacentHTML('beforeend', (0,_components_RightElement__WEBPACK_IMPORTED_MODULE_2__["default"])('signin')); // autofocus element
+  app.insertAdjacentHTML('beforeend', (0,_components_LeftElement__WEBPACK_IMPORTED_MODULE_0__["default"])());
+  app.insertAdjacentHTML('beforeend', (0,_components_RightElement__WEBPACK_IMPORTED_MODULE_1__["default"])('signin')); // autofocus element
 
   document.getElementById('username').focus(); // switch form element
 
-  var formElement = document.querySelector('.right-element-auth');
+  var formElement = document.querySelector('#auth-form');
   var btnSwitch = document.querySelector('.auth-btn-switch');
+
+  function switchElement(props) {
+    btnSwitch.setAttribute('data-auth', props.authMode);
+    btnSwitch.previousElementSibling.textContent = props.messages;
+    btnSwitch.textContent = props.label;
+    formElement.insertAdjacentHTML('beforeend', props.component);
+  }
+
   btnSwitch.addEventListener('click', function (e) {
+    var target = e.target.getAttribute('data-auth');
     formElement.innerHTML = "";
-    formElement.insertAdjacentHTML('beforeend', (0,_components_RightElement__WEBPACK_IMPORTED_MODULE_2__["default"])('signup'));
-    var btnSwitch = document.querySelector('.auth-btn-switch');
-    console.log(btnSwitch);
+    formElement.setAttribute('data-action', target);
+
+    if (target === 'signup') {
+      switchElement({
+        authMode: 'signin',
+        messages: 'Sudah memiliki akun?',
+        label: 'Masuk',
+        component: (0,_components_RegisterForm__WEBPACK_IMPORTED_MODULE_3__["default"])()
+      });
+    } else {
+      switchElement({
+        authMode: 'signup',
+        messages: 'Belum memiliki akun?',
+        label: 'Daftar',
+        component: (0,_components_LoginForm__WEBPACK_IMPORTED_MODULE_2__["default"])()
+      });
+    }
   });
 });
 })();
